@@ -1,0 +1,14 @@
+public class add{
+  
+  
+  public add(int a, int b){
+     int c;
+     c=a+b;
+     System.out.println("Sum = "+c);
+  }
+  
+  public static void main(String args[]){
+    add num = new add(542,245);
+  }
+    
+  
