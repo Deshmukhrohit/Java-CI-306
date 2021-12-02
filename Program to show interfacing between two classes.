@@ -1,0 +1,24 @@
+  public void branch(); // interface method
+}
+
+interface student2 {
+  public void otherbranch(); // interface method
+}
+
+
+class DemoClass implements student, student2 {
+  public void branch() {
+    System.out.println("Students in CSIT Branch");
+  }
+  public void otherbranch() {
+    System.out.println("Students in CSE Branch");
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    DemoClass myObj = new DemoClass();
+    myObj.branch();
+    myObj.otherbranch();
+  }
+}
