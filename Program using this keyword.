@@ -1,0 +1,22 @@
+class employee{
+    int id;
+    String name;
+    float salary;
+    employee(int id ,String name, float salary){
+        this.id = id;
+        this.name = name;
+        this.salary = salary;
+    }
+    void display()
+    {
+        System.out.println(id+" " +name+" "+salary);
+    }
+}
+class departmentThis{
+    public static void main(String args[]){
+        employee e1 = new employee(20809,"Rohit",50000f);
+        employee e2 = new employee(20810,"Ram",100000f);
+        e1.display();
+        e2.display();
+    }
+}
