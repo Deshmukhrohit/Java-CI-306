@@ -1,0 +1,31 @@
+class operation{
+    public void sum(){
+        int a = 528 ,b = 53,c;
+        c = a + b;
+        System.out.println("Add = "+c);
+    }
+}
+class mult extends operation{
+    public void sum(){
+        int a = 528 ,b = 53,c;
+        c = a * b;
+        System.out.println("Mult = "+c);
+    }
+}
+class div extends operation{
+    public void sum(){
+        int a = 528 ,b = 53,c;
+        c = a / b;
+        System.out.println("DIvide = "+c);
+    }
+}
+class MyMainClass{
+    public static void main(String[] args){
+        operation myoperation = new operation();
+        operation mymult = new mult();
+        operation mydiv = new div();
+        myoperation.sum();
+        mymult.sum();
+        mydiv.sum();
+    }
+}
