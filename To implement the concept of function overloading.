@@ -1,0 +1,21 @@
+public class Main
+{   
+    static int fact(int x){
+        int fact=1;
+        for(int i=x;i>=1;i--){
+           fact = fact * i; 
+        }
+        return fact;
+    }
+    static double sum(double a,double b){
+        double c;
+        c = a*b;
+       return c;
+    }
+	public static void main(String[] args) {
+		int mynum = fact(5);
+		double num2 = sum(58.2 ,98.50);
+		System.out.println("\n factorial ="+ mynum);
+		System.out.println("\n Multiplication = "+num2);
+	}
+}
